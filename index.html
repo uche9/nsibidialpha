@@ -23,9 +23,31 @@
                  position: absolute;
                  border:orange;
                  width: 9px;
-                 height:9px;
-                 
+                 height:9px;             
                  }
+
+             .digit{
+                width: 45px;
+                height: 40px;
+                color: red;
+               }
+
+               .digit:hover {
+                width: 45px;
+                height: 40px;
+                background:orange; 
+               }
+
+               .control{
+                width: 50px;
+                height: 40px;
+               }
+
+               .control:hover{
+                width: 50px;
+                height: 40px;
+                background: blue;
+               }
        </style>
 
 
@@ -76873,43 +76895,50 @@ inclue [a] part in bracket */
 </div>
 
 <!--Buttons start-->
-  <div style="position: absolute; top:430  ;background-color: grey; left: 10;  width: 400 ;height: 90">
+  <div style="position: absolute; top:430  ;background-color: grey; left: 10;  width: 500 ;height: 130">
 
 
    
    <!--<button  onclick="scanSlot()" > SCAN </button>
    <button  onclick="showCusor()" > CUSOR </button>
    <button  onclick="showspaceBar()" > SPACE    BAR </button> -->
-   <button  onclick="showDelete()" > DELETE </button>  
-   <button  onclick="showZero()" > 0 </button>
-   <button  onclick="showOne()" > 1 </button>
-   <button  onclick="showTwo()" > 2 </button>
-   <button  onclick="showThree()" > 3 </button>
-   <button  onclick="showFour()" > 4 </button>
-   <button  onclick="showFive()" > 5 </button>
-   <button  onclick="showSix()" > 6 </button>
-   <button  onclick="showSeven()" > 7 </button>
-   <button  onclick="showEight()" > 8 </button>
-   <button  onclick="showNine()" > 9</button>
-   <button  onclick="showDot()" > .</button>
-    
-   <button  onclick="activateInactivecellcolr()" > CHANGE BG CLR </button>
-   <button  onclick="clearScreen()" > CLEAR </button>
-  </div>
    
+   <button class="digit" onclick="showZero()" > 0 </button>
+   <button class="digit" onclick="showOne()" > 1 </button>
+   <button class="digit" onclick="showTwo()" > 2 </button>
+   <button class="digit" onclick="showThree()" > 3 </button>
+   <button class="digit" onclick="showFour()" > 4 </button>
+   <button class="digit" onclick="showFive()" > 5 </button>
+   <button class="digit" onclick="showSix()" > 6 </button>
+   <button class="digit" onclick="showSeven()" > 7 </button>
+   <button class="digit" onclick="showEight()" > 8 </button>
+   <button class="digit" onclick="showNine()" > 9</button>
+   
+   <button class="control" style =" width: 200px ; height: 43px " onclick="showDelete()" > DELETE </button>  
+   <button class="control"  style =" width: 150px ; height: 43px" onclick="clearScreen()" > CLEAR </button>
+   <button class="digit" onclick="showDot()" > .</button>
+   <button class="control" style =" width: 70px ; height: 35px ; margin-top:0 "  onclick="decimalFraction()" > a/b --> x.yz </button>
+   
+        <div>
+                
+                <button class="digit" onclick="showPlus()" > + </button>
+                <button class="digit" onclick="showMinus()" > - </button>
+                <button class="digit" onclick="showDivide()" > / </button> 
+                <button class="digit" onclick="showMultiply()" > * </button>  
+                <button class="control" onclick="Read()" > READ</button>
+                <button class="control" onclick="Ans()" > ANS</button>
+                
+        </div>
+  </div>
+        <div >
+              Hi, I am NSIBIDI.This is version 0.0.1.
+              I am powered by +80,000 lines of code!
+              I can do basic calculations such as:
+              a+b; a-b ; a*b; a/b.
+              I can't handle negative numbers yet!
+              Still under training!!
+        </div>
 
-      <div>
-                 <span> NSIBIDI: 0.0.1 </span>
-                <button  onclick="showPlus()" > + </button>
-                <button  onclick="showMinus()" > - </button>
-                <button  onclick="showDivide()" > / </button> 
-                <button  onclick="showMultiply()" > * </button>  
-                <button  onclick="showleftCurveBracket()" > ( </button>
-                <button  onclick="showrightCurveBracket()" > ) </button>
-                <button  onclick="Read()" > READ</button>
-                <button  onclick="Ans()" > ANS</button>
-                <button  onclick="decimalFraction()" > a/b --> x.yz </button>
-       </div>
 
         
    </body>
